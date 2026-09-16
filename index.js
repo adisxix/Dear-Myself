@@ -1,18 +1,17 @@
-function showLoaderAndRedirect() {
-	const mainContent = document.getElementById('mainContent');
-	const loader = document.getElementById('loader');
-	const startBtn = document.getElementById('startBtn');
+const mainContent = document.getElementById("mainContent");
+const loader = document.getElementById("loader");
+const startButton = document.getElementById("startBtn");
 
-	startBtn.disabled = true;
-	mainContent.style.display = 'none';
-	loader.style.display = 'flex';
+function startJournal() {
+  if (startButton) startButton.disabled = true;
+  if (mainContent) mainContent.style.display = "none";
+  if (loader) loader.style.display = "flex";
 
-	setTimeout(function () {
-		window.location.href = 'mood.html';
-	}, 3000);
+  setTimeout(() => {
+    window.location.href = "mood.html";
+  }, 1200);
 }
 
-const startButton = document.getElementById('startBtn');
 if (startButton) {
-	startButton.addEventListener('click', showLoaderAndRedirect);
+  startButton.addEventListener("click", startJournal);
 }

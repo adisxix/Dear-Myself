@@ -1,67 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
-</head>
-<body class="bg-[#FFEEDD] min-h-screen flex items-center justify-center">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dear Myself</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-[#FFEEDD] min-h-screen flex items-center justify-center p-4 sm:p-6"
+  >
+    <div
+      id="mainContent"
+      class="relative bg-[#FFD8BE] w-full max-w-[550px] min-h-[550px] border-[4px] border-[#9381FF] flex flex-col items-center justify-start px-4 sm:px-8 pt-6 sm:pt-8 pb-24 rounded-3xl"
+    >
+      <h1
+        class="font-['Patrick_Hand_SC'] text-3xl sm:text-4xl text-[#9381FF] font-semibold text-center leading-tight"
+      >
+        How was your energy today?
+      </h1>
 
-<div id="mainContent" class="relative bg-[#FFD8BE] w-[550px] h-[550px] border-[4px] border-[#9381FF] flex flex-col items-center justify-start px-8 pt-8 pb-24 rounded-3xl">
+      <div
+        id="energyGroup"
+        class="mt-5 sm:mt-6 w-full grid grid-cols-3 gap-3 sm:gap-5 place-items-center"
+      >
+        <button
+          class="energy-btn w-20 h-20 sm:w-24 sm:h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200 cursor-pointer"
+          aria-label="High"
+        >
+          <span class="text-2xl sm:text-3xl">⚡</span>
+          <span
+            class="energy-label font-['Patrick_Hand_SC'] text-base sm:text-lg text-[#9381FF] leading-none mt-1"
+            >High</span
+          >
+        </button>
+        <button
+          class="energy-btn w-20 h-20 sm:w-24 sm:h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200 cursor-pointer"
+          aria-label="Medium"
+        >
+          <span class="text-2xl sm:text-3xl">🔋</span>
+          <span
+            class="energy-label font-['Patrick_Hand_SC'] text-base sm:text-lg text-[#9381FF] leading-none mt-1"
+            >Medium</span
+          >
+        </button>
+        <button
+          class="energy-btn w-20 h-20 sm:w-24 sm:h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200 cursor-pointer"
+          aria-label="Low"
+        >
+          <span class="text-2xl sm:text-3xl">🪫</span>
+          <span
+            class="energy-label font-['Patrick_Hand_SC'] text-base sm:text-lg text-[#9381FF] leading-none mt-1"
+            >Low</span
+          >
+        </button>
+      </div>
 
-<h1 class="font-['Patrick_Hand_SC'] text-4xl text-[#9381FF] font-semibold text-center leading-tight">How was your energy today?</h1>
+      <h1
+        class="font-['Patrick_Hand_SC'] text-2xl sm:text-3xl text-[#9381FF] font-semibold text-center leading-tight mt-6 sm:mt-8"
+      >
+        Did you take care of yourself today?
+      </h1>
 
-<div id="energyGroup" class="mt-10 w-full grid grid-cols-3 gap-5 place-items-center">
-<button class="energy-btn w-24 h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200" aria-label="High">
-<span class="text-3xl">⚡</span>
-<span class="energy-label font-['Patrick_Hand_SC'] text-lg text-[#9381FF] leading-none mt-1">High</span>
-</button>
-<button class="energy-btn w-24 h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200" aria-label="Medium">  
-<span class="text-3xl">🔋</span>
-<span class="energy-label font-['Patrick_Hand_SC'] text-lg text-[#9381FF] leading-none mt-1">Medium</span>
-</button>
-<button class="energy-btn w-24 h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200" aria-label="Low">
-<span class="text-3xl">🪫</span>
-<span class="energy-label font-['Patrick_Hand_SC'] text-lg text-[#9381FF] leading-none mt-1">Low</span>
-</button>
+      <div
+        id="careGroup"
+        class="mt-5 sm:mt-6 w-full grid grid-cols-3 gap-3 sm:gap-5 place-items-center"
+      >
+        <button
+          class="energy-btn w-20 h-20 sm:w-24 sm:h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200 cursor-pointer"
+          aria-label="Yes"
+        >
+          <span class="text-2xl sm:text-3xl">✅</span>
+          <span
+            class="energy-label font-['Patrick_Hand_SC'] text-base sm:text-lg text-[#9381FF] leading-none mt-1"
+            >Yes</span
+          >
+        </button>
+        <button
+          class="energy-btn w-20 h-20 sm:w-24 sm:h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200 cursor-pointer"
+          aria-label="No"
+        >
+          <span class="text-2xl sm:text-3xl">❌</span>
+          <span
+            class="energy-label font-['Patrick_Hand_SC'] text-base sm:text-lg text-[#9381FF] leading-none mt-1"
+            >No</span
+          >
+        </button>
+        <button
+          class="energy-btn w-20 h-20 sm:w-24 sm:h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200 cursor-pointer"
+          aria-label="Somewhat"
+        >
+          <span class="text-2xl sm:text-3xl">🤔</span>
+          <span
+            class="energy-label font-['Patrick_Hand_SC'] text-base sm:text-lg text-[#9381FF] leading-none mt-1"
+            >Somewhat</span
+          >
+        </button>
+      </div>
 
-</div>
+      <button
+        type="button"
+        onclick="window.location.href = 'day.html'"
+        class="absolute bottom-5 left-5 sm:left-6 px-5 sm:px-6 py-2 sm:py-2.5 rounded-xl border-2 border-[#9381FF] bg-[#FFEEDD] text-[#9381FF] font-['Patrick_Hand_SC'] text-lg sm:text-xl shadow-[0_4px_0_0_#B8B8FF] hover:-translate-y-0.5 hover:shadow-[0_6px_0_0_#B8B8FF] transition duration-200 cursor-pointer"
+      >
+        Back
+      </button>
 
-<h1 class="font-['Patrick_Hand_SC'] text-3xl text-[#9381FF] font-semibold text-center leading-tight mt-8">Did you took care of yourself today?</h1>
+      <button
+        id="nextBtn"
+        type="button"
+        disabled
+        class="absolute bottom-5 right-5 sm:right-6 px-5 sm:px-6 py-2 sm:py-2.5 rounded-xl border-2 border-[#9381FF] bg-[#9381FF] text-[#FFEEDD] font-['Patrick_Hand_SC'] text-lg sm:text-xl shadow-[0_4px_0_0_#7B68EE] transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none enabled:cursor-pointer enabled:hover:-translate-y-0.5 enabled:hover:shadow-[0_6px_0_0_#7B68EE]"
+      >
+        Next
+      </button>
+    </div>
 
-<div id="careGroup" class="mt-10 w-full grid grid-cols-3 gap-5 place-items-center">
-<button class="energy-btn w-24 h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200" aria-label="Yes">
-<span class="text-3xl">✅</span>
-<span class="energy-label font-['Patrick_Hand_SC'] text-lg text-[#9381FF] leading-none mt-1">Yes</span>
-</button>
-<button class="energy-btn w-24 h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200" aria-label="No">
-<span class="text-3xl">❌</span>
-<span class="energy-label font-['Patrick_Hand_SC'] text-lg text-[#9381FF] leading-none mt-1">No</span>
-</button>
-<button class="energy-btn w-24 h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200" aria-label="Somewhat">
-<span class="text-3xl">🤔</span>
-<span class="energy-label font-['Patrick_Hand_SC'] text-lg text-[#9381FF] leading-none mt-1">Somewhat</span>
-</button>
-</div>
+    <div id="loader" class="w-full gap-x-2 hidden justify-center items-center">
+      <div class="w-5 bg-[#d991c2] h-5 rounded-full animate-bounce"></div>
+      <div class="w-5 h-5 bg-[#9869b8] rounded-full animate-bounce"></div>
+      <div class="w-5 h-5 bg-[#6756cc] rounded-full animate-bounce"></div>
+    </div>
 
-<button type="button" onclick="window.location.href='day.html'" class="absolute bottom-5 left-6 px-6 py-2.5 rounded-xl border-2 border-[#9381FF] bg-[#FFEEDD] text-[#9381FF] font-['Patrick_Hand_SC'] text-xl shadow-[0_4px_0_0_#B8B8FF] hover:-translate-y-0.5 hover:shadow-[0_6px_0_0_#B8B8FF] transition duration-200">Back</button>
-
-<button id="nextBtn" type="button" disabled class="absolute bottom-6 right-6 px-5 py-2.5 rounded-xl border-2 border-[#9381FF] bg-[#9381FF] text-[#FFEEDD] font-['Patrick_Hand_SC'] text-xl shadow-[0_4px_0_0_#7B68EE] transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none enabled:hover:-translate-y-0.5 enabled:hover:shadow-[0_6px_0_0_#7B68EE]">Next</button>
-
-</div>
-
-<div id="loader" class="w-full gap-x-2 hidden justify-center items-center">
-<div class="w-5 bg-[#d991c2] h-5 rounded-full animate-bounce"></div>
-<div class="w-5 h-5 bg-[#9869b8] rounded-full animate-bounce"></div>
-<div class="w-5 h-5 bg-[#6756cc] rounded-full animate-bounce"></div>
-</div>
-
-<script src="energy.js"></script>
-
-</body>
+    <script src="energy.js"></script>
+  </body>
 </html>

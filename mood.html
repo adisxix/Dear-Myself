@@ -1,73 +1,151 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
-</head>
-<body class="bg-[#FFEEDD] min-h-screen flex items-center justify-center">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dear Myself</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-[#FFEEDD] min-h-screen flex items-center justify-center p-4 sm:p-6"
+  >
+    <div
+      class="relative bg-[#FFD8BE] w-full max-w-[550px] min-h-[550px] sm:h-[550px] border-[4px] border-[#9381FF] flex flex-col items-center justify-start pt-6 px-4 sm:px-6 pb-24 rounded-3xl"
+    >
+      <h1
+        class="font-['Patrick_Hand_SC'] text-4xl sm:text-5xl text-[#9381FF] font-semibold text-center"
+      >
+        How was your day?
+      </h1>
 
-<div class="relative bg-[#FFD8BE] w-[550px] h-[550px] border-[4px] border-[#9381FF] flex flex-col items-center justify-start pt-6 pb-24 rounded-3xl">
+      <div
+        class="mt-6 sm:mt-8 grid grid-cols-3 gap-3 sm:gap-5 place-items-center"
+      >
+        <button
+          class="mood-btn w-20 h-20 sm:w-24 sm:h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200 cursor-pointer"
+          aria-label="Happy"
+        >
+          <span class="text-2xl sm:text-3xl">😊</span>
+          <span
+            class="mood-label font-['Patrick_Hand_SC'] text-base sm:text-lg text-[#9381FF] leading-none mt-1"
+            >Happy</span
+          >
+        </button>
 
-<h1 class="font-['Patrick_Hand_SC'] text-5xl text-[#9381FF] font-semibold text-start ">How was your day?</h1>
+        <button
+          class="mood-btn w-20 h-20 sm:w-24 sm:h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200 cursor-pointer"
+          aria-label="Excited"
+        >
+          <span class="text-2xl sm:text-3xl">🤩</span>
+          <span
+            class="mood-label font-['Patrick_Hand_SC'] text-base sm:text-lg text-[#9381FF] leading-none mt-1"
+            >Excited</span
+          >
+        </button>
 
-<div class="mt-8 grid grid-cols-3 gap-5">
-<button class="mood-btn w-24 h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200" aria-label="Happy">
-<span class="text-3xl">😊</span>
-<span class="mood-label font-['Patrick_Hand_SC'] text-lg text-[#9381FF] leading-none mt-1">Happy</span>
-</button>
+        <button
+          class="mood-btn w-20 h-20 sm:w-24 sm:h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200 cursor-pointer"
+          aria-label="Calm"
+        >
+          <span class="text-2xl sm:text-3xl">😌</span>
+          <span
+            class="mood-label font-['Patrick_Hand_SC'] text-base sm:text-lg text-[#9381FF] leading-none mt-1"
+            >Calm</span
+          >
+        </button>
 
-<button class="mood-btn w-24 h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200" aria-label="Excited">
-<span class="text-3xl">🤩</span>
-<span class="mood-label font-['Patrick_Hand_SC'] text-lg text-[#9381FF] leading-none mt-1">Excited</span>
-</button>
+        <button
+          class="mood-btn w-20 h-20 sm:w-24 sm:h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200 cursor-pointer"
+          aria-label="Sad"
+        >
+          <span class="text-2xl sm:text-3xl">😢</span>
+          <span
+            class="mood-label font-['Patrick_Hand_SC'] text-base sm:text-lg text-[#9381FF] leading-none mt-1"
+            >Sad</span
+          >
+        </button>
 
-<button class="mood-btn w-24 h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200" aria-label="Calm">
-<span class="text-3xl">😌</span>
-<span class="mood-label font-['Patrick_Hand_SC'] text-lg text-[#9381FF] leading-none mt-1">Calm</span>
-</button>
+        <button
+          class="mood-btn w-20 h-20 sm:w-24 sm:h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200 cursor-pointer"
+          aria-label="Angry"
+        >
+          <span class="text-2xl sm:text-3xl">😠</span>
+          <span
+            class="mood-label font-['Patrick_Hand_SC'] text-base sm:text-lg text-[#9381FF] leading-none mt-1"
+            >Angry</span
+          >
+        </button>
 
-<button class="mood-btn w-24 h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200" aria-label="Sad">
-<span class="text-3xl">😢</span>
-<span class="mood-label font-['Patrick_Hand_SC'] text-lg text-[#9381FF] leading-none mt-1">Sad</span>
-</button>
+        <button
+          class="mood-btn w-20 h-20 sm:w-24 sm:h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200 cursor-pointer"
+          aria-label="Tired"
+        >
+          <span class="text-2xl sm:text-3xl">🥱</span>
+          <span
+            class="mood-label font-['Patrick_Hand_SC'] text-base sm:text-lg text-[#9381FF] leading-none mt-1"
+            >Tired</span
+          >
+        </button>
 
-<button class="mood-btn w-24 h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200" aria-label="Angry">
-<span class="text-3xl">😠</span>
-<span class="mood-label font-['Patrick_Hand_SC'] text-lg text-[#9381FF] leading-none mt-1">Angry</span>
-</button>
+        <button
+          class="mood-btn w-20 h-20 sm:w-24 sm:h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200 cursor-pointer"
+          aria-label="Loved"
+        >
+          <span class="text-2xl sm:text-3xl">🥰</span>
+          <span
+            class="mood-label font-['Patrick_Hand_SC'] text-base sm:text-lg text-[#9381FF] leading-none mt-1"
+            >Loved</span
+          >
+        </button>
 
-<button class="mood-btn w-24 h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200" aria-label="Tired">
-<span class="text-3xl">🥱</span>
-<span class="mood-label font-['Patrick_Hand_SC'] text-lg text-[#9381FF] leading-none mt-1">Tired</span>
-</button>
+        <button
+          class="mood-btn w-20 h-20 sm:w-24 sm:h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200 cursor-pointer"
+          aria-label="Confused"
+        >
+          <span class="text-2xl sm:text-3xl">😕</span>
+          <span
+            class="mood-label font-['Patrick_Hand_SC'] text-base sm:text-lg text-[#9381FF] leading-none mt-1"
+            >Confused</span
+          >
+        </button>
 
-<button class="mood-btn w-24 h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200" aria-label="Loved">
-<span class="text-3xl">🥰</span>
-<span class="mood-label font-['Patrick_Hand_SC'] text-lg text-[#9381FF] leading-none mt-1">Loved</span>
-</button>
+        <button
+          class="mood-btn w-20 h-20 sm:w-24 sm:h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200 cursor-pointer"
+          aria-label="Grateful"
+        >
+          <span class="text-2xl sm:text-3xl">🙏</span>
+          <span
+            class="mood-label font-['Patrick_Hand_SC'] text-base sm:text-lg text-[#9381FF] leading-none mt-1"
+            >Grateful</span
+          >
+        </button>
+      </div>
 
-<button class="mood-btn w-24 h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200" aria-label="Confused">
-<span class="text-3xl">😕</span>
-<span class="mood-label font-['Patrick_Hand_SC'] text-lg text-[#9381FF] leading-none mt-1">Confused</span>
-</button>
+      <button
+        type="button"
+        onclick="window.location.href = 'index.html'"
+        class="absolute bottom-5 left-5 sm:left-6 px-5 sm:px-6 py-2 sm:py-2.5 rounded-xl border-2 border-[#9381FF] bg-[#FFEEDD] text-[#9381FF] font-['Patrick_Hand_SC'] text-lg sm:text-xl shadow-[0_4px_0_0_#B8B8FF] hover:-translate-y-0.5 hover:shadow-[0_6px_0_0_#B8B8FF] transition duration-200 cursor-pointer"
+      >
+        Back
+      </button>
 
-<button class="mood-btn w-24 h-24 bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl flex flex-col items-center justify-center hover:scale-105 transition duration-200" aria-label="Grateful">
-<span class="text-3xl">🙏</span>
-<span class="mood-label font-['Patrick_Hand_SC'] text-lg text-[#9381FF] leading-none mt-1">Grateful</span>
-</button>
-</div>
+      <button
+        id="nextBtn"
+        type="button"
+        disabled
+        class="absolute bottom-5 right-5 sm:right-6 px-5 sm:px-6 py-2 sm:py-2.5 rounded-xl border-2 border-[#9381FF] bg-[#9381FF] text-[#FFEEDD] font-['Patrick_Hand_SC'] text-lg sm:text-xl shadow-[0_4px_0_0_#7B68EE] transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none enabled:cursor-pointer enabled:hover:-translate-y-0.5 enabled:hover:shadow-[0_6px_0_0_#7B68EE]"
+      >
+        Next
+      </button>
+    </div>
 
-<button type="button" onclick="window.location.href='index.html'" class="absolute bottom-5 left-6 px-6 py-2.5 rounded-xl border-2 border-[#9381FF] bg-[#FFEEDD] text-[#9381FF] font-['Patrick_Hand_SC'] text-xl shadow-[0_4px_0_0_#B8B8FF] hover:-translate-y-0.5 hover:shadow-[0_6px_0_0_#B8B8FF] transition duration-200">Back</button>
-
-<button id="nextBtn" type="button" disabled class="absolute bottom-6 right-6 px-5 py-2.5 rounded-xl border-2 border-[#9381FF] bg-[#9381FF] text-[#FFEEDD] font-['Patrick_Hand_SC'] text-xl shadow-[0_4px_0_0_#7B68EE] transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none enabled:hover:-translate-y-0.5 enabled:hover:shadow-[0_6px_0_0_#7B68EE]">Next</button>
-
-</div>
-
-<script src="mood.js"></script>
-</body>
+    <script src="mood.js"></script>
+  </body>
 </html>

@@ -1,41 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
-</head>
-<body class="bg-[#FFEEDD] min-h-screen flex items-center justify-center">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dear Myself</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-[#FFEEDD] min-h-screen flex items-center justify-center p-4 sm:p-6"
+  >
+    <div
+      class="relative bg-[#FFD8BE] w-full max-w-[550px] min-h-[550px] border-[4px] border-[#9381FF] flex flex-col items-center justify-start pt-6 px-4 sm:px-6 pb-24 rounded-3xl"
+    >
+      <h1
+        class="font-['Patrick_Hand_SC'] text-4xl sm:text-5xl text-[#9381FF] font-semibold text-center"
+      >
+        Today's Reflections
+      </h1>
 
-<div class="relative bg-[#FFD8BE] w-[550px] h-[550px] border-[4px] border-[#9381FF] flex flex-col items-center justify-start pt-6 pb-24 rounded-3xl">
+      <p
+        id="statusText"
+        class="mt-3 font-['Patrick_Hand_SC'] text-lg sm:text-xl text-[#9381FF] text-center px-2"
+      >
+        Analyzing your day...
+      </p>
 
-<h1 class="font-['Patrick_Hand_SC'] text-5xl text-[#9381FF] font-semibold text-start ">Today's Reflections</h1>
+      <div
+        class="mt-4 w-full max-w-[460px] min-h-[130px] max-h-[170px] bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl p-4 overflow-y-auto"
+      >
+        <h5 class="font-['Patrick_Hand_SC'] text-2xl text-[#9381FF]">
+          Your Reflection
+        </h5>
+        <p
+          id="reflectionText"
+          class="font-['Patrick_Hand_SC'] text-lg text-[#7B68EE] mt-2 leading-snug"
+        ></p>
+      </div>
 
-<p id="statusText" class="mt-4 font-['Patrick_Hand_SC'] text-xl text-[#9381FF]">Analyzing your day...</p>
+      <div
+        class="mt-3 w-full max-w-[460px] min-h-[100px] max-h-[140px] bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl p-4 overflow-y-auto"
+      >
+        <h5 class="font-['Patrick_Hand_SC'] text-2xl text-[#9381FF]">
+          Your Affirmation
+        </h5>
+        <p
+          id="affirmationText"
+          class="font-['Patrick_Hand_SC'] text-lg text-[#7B68EE] mt-2 leading-snug"
+        ></p>
+      </div>
 
-<div class="mt-5 w-[460px] h-[150px] bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl p-4 overflow-y-auto">
-<h5 class="font-['Patrick_Hand_SC'] text-2xl text-[#9381FF]">Your Reflection</h5>
-<p id="reflectionText" class="font-['Patrick_Hand_SC'] text-lg text-[#7B68EE] mt-2 leading-snug"></p>
-</div>
+      <div class="absolute bottom-5 left-1/2 -translate-x-1/2">
+        <button
+          id="startFreshBtn"
+          type="button"
+          class="w-36 h-12 bg-[#FFD8BE] cursor-pointer rounded-3xl border-2 border-[#9381FF] shadow-[inset_0px_-2px_0px_1px_#9381FF] group hover:bg-[#9381FF] transition duration-300 ease-in-out flex items-center justify-center"
+        >
+          <span
+            class="font-['Patrick_Hand_SC'] font-semibold text-xl text-[#9381FF] group-hover:text-[#FFD8BE]"
+            >Start Fresh</span
+          >
+        </button>
+      </div>
+    </div>
 
-<div class="mt-4 w-[460px] h-[120px] bg-[#FFEEDD] border-2 border-[#9381FF] rounded-2xl p-4 overflow-y-auto">
-<h5 class="font-['Patrick_Hand_SC'] text-2xl text-[#9381FF]">Your Affirmation</h5>
-<p id="affirmationText" class="font-['Patrick_Hand_SC'] text-lg text-[#7B68EE] mt-2 leading-snug"></p>
-</div>
-
-<div class="absolute bottom-5 left-1/2 -translate-x-1/2">
-<button type="button" onclick="window.location.href='index.html'" class="w-36 h-12 bg-[#FFD8BE] cursor-pointer rounded-3xl border-2 border-[#9748FF] shadow-[inset_0px_-2px_0px_1px_#9748FF] group hover:bg-[#9748FF] transition duration-300 ease-in-out">
-<span class="font-medium text-[#9748FF] group-hover:text-[#FFD8BE]">Start Fresh</span>
-</button>
-</div>
-
-
-</div>
-
-<script type="module" src="reflections.js"></script>
-</body>
+    <script src="reflections.js"></script>
+  </body>
 </html>
